@@ -1,22 +1,25 @@
 import React from 'react'
-import { Nav, Title, NavList, NavListItem, Link } from './Navbar.styles';
-
-const Navbar = () => {
+import { Nav, Title, NavList, NavListItem, NavLink, MobileIcon } from './Navbar.styles';
+import { RiBarChartHorizontalFill } from 'react-icons/ri';
+const Navbar = ({ toggle }) => {
     return (
         <Nav>
-            <Title>The Bakery</Title>
+            <Title>The Universe</Title>
+            <MobileIcon onClick={toggle}>
+                <RiBarChartHorizontalFill />
+            </MobileIcon>
             <NavList>
                 <NavListItem>
-                    <Link>Home</Link>
+                    <NavLink to='home'>Home</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <Link>About</Link>
+                    <NavLink to='about'>About</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <Link>Team</Link>
+                    <NavLink to='team'>Team</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <Link>Contact</Link>
+                    <NavLink to='contact'>Contact</NavLink>
                 </NavListItem>
             </NavList>
         </Nav>

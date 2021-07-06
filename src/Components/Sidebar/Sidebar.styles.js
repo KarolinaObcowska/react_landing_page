@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkRouter } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
 
-const primary_color = '#39586f';
+const primary_color = '#1f3049';
+const hover_color = '#F21170'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
@@ -20,7 +20,7 @@ export const SidebarContainer = styled.aside`
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 export const CloseIcon = styled(FaTimes)`
-    color: white;
+    color: ${hover_color};
     cursor: pointer
 `
 
@@ -62,7 +62,7 @@ export const SidebarLink = styled(LinkRouter)`
     cursor: pointer;
 
     &:hover {
-        color: #FFC947;
+        color: ${hover_color};
         transition: .2s easy-in-out;
     }
 `

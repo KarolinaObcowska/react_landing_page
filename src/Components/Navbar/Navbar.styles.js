@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { Link as LinkRouter } from 'react-router-dom';
 
-const primaryColor = '#FFC947';
+const primaryColor = '#F21170';
 const slideIn = keyframes`
 from{
 }
@@ -34,7 +34,7 @@ export const Title = styled.h2`
         position: absolute;
         width: 11rem;
         height: 2px;
-        top: 1.6rem;
+        top: 1.7rem;
         left: .1rem;
         background-color: ${primaryColor};
         transform: translateX(-70rem);
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 `;
 export const MobileIcon = styled.div`
     display: none;
-    color: ${primaryColor};
+    color: white;
     
     @media screen and (max-width: 768px) {
         display: block;
@@ -110,7 +110,7 @@ export const NavLink = styled(LinkRouter)`
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #ECD662;
+        background-color: ${primaryColor};
         left: 0;
         transform: scaleX(0);
         transition: all .5s;

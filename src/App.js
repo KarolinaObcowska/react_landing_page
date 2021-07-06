@@ -7,8 +7,8 @@ import Navigation from './Components/Navigation/Navigation';
 function App() {
   return (
     <div className="App">
-      <Hero />
       <Router>
+        <Hero />
         <Navigation />
       </Router>
     </div>

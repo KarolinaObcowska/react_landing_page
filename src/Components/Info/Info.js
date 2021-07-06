@@ -15,7 +15,7 @@ import {
     Img
 } from './Info.styles';
 
-const Info = ({ lightBg, id, topLine, headline, description, img, alt }) => {
+const Info = ({ lightBg, id, topLine, headLine, description, img, alt }) => {
     return (
         <Fragment>
             <AboutContainer lightBg={lightBg} id={id}>
@@ -24,15 +24,15 @@ const Info = ({ lightBg, id, topLine, headline, description, img, alt }) => {
                         <Column1>
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
-                                <Heading>{headline}</Heading>
+                                <Heading>{headLine}</Heading>
                                 <Subtitle>{description}</Subtitle>
                                 <BtnContainer>
-                                    <Button to='home'
-                                        smooth='true'
-                                        duration='500'
+                                    <Button to='/home'
+                                        smooth={true}
+                                        duration={500}
                                         spy={true}
-                                        offset='-80'
-                                        exact='true'
+                                        exact="true"
+                                        offset={-80}
                                     ><span>Join us!</span></Button>
                                 </BtnContainer>
                             </TextWrapper>

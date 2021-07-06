@@ -5,10 +5,12 @@ const primary_color = '#F21170'
 const secondary_color = '#1f3049'
 
 export const AboutContainer = styled.div`
+    height: 100vh;
     background: ${({ lightBg }) => (lightBg ? 'white' : `${secondary_color}`)};
     color: ${({ lightBg }) => (lightBg ? `${secondary_color}` : 'white')};
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        height: fit-content;
     }
 `
 export const InfoContainer = styled.div`
@@ -47,11 +49,12 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     max-width: 540px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     padding-top: 0;
     padding-bottom: 4rem;
 
 `
-
 export const TopLine = styled.p`
     font-size: 1rem;
     line-height: 1rem;
@@ -63,8 +66,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
     margin-bottom: 1.5rem;
     font-size: 3rem;
-    line-height: .1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: ${primary_color};
 
     @media screen and (max-width: 768px) {
@@ -106,7 +108,14 @@ export const Button = styled(Link)`
 
 export const ImgContainer = styled.div`
     max-width: 555px;
+    margin-left: 3rem;
+    margin-right: 3rem;
     height: 100%
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        margin: auto;
+    }
+
 `
 export const Img = styled.img`
     width: 100%;

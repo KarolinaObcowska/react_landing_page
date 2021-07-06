@@ -70,16 +70,17 @@ export const Button = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem;
+    padding: .6rem;
     text-decoration: none;
     span {
         color: white;
+        margin-left: .3rem;
         justify-content: center;
     }
 `
 
 export const ArrowRight = styled(MdArrowForward)`
-    margin-left: .5rem;
+    margin-left: .3rem;
     font-size: 1.5rem;
     color: white;
 

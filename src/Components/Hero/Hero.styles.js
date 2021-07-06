@@ -59,6 +59,7 @@ export const HeroBtn = styled.div`
     felx-direction: column;
     justify-content: center;
     align-items: center;
+
 `
 
 export const Button = styled(Link)`
@@ -81,4 +82,5 @@ export const ArrowRight = styled(MdArrowForward)`
     margin-left: .5rem;
     font-size: 1.5rem;
     color: white;
+
 `

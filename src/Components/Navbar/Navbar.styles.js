@@ -33,12 +33,16 @@ export const Title = styled.h2`
         content: '';
         position: absolute;
         width: 11rem;
-        height: 2px;
+        height: 1px;
         top: 1.7rem;
         left: .1rem;
         background-color: ${primaryColor};
         transform: translateX(-70rem);
         animation: ${slideIn} 1.2s forwards;
+    }
+    
+    @media screen and (max-width: 768px) { 
+        display: none
     }
 `;
 export const MobileIcon = styled.div`

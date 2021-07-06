@@ -1,10 +1,10 @@
 import React from 'react';
 import { HeroContainer, Video, HeroH1, HeroP, HeroBtn, Button, ArrowRight } from './Hero.styles';
-import BackgroundVideo from './Video.mp4';
+import BackgroundVideo from '../../videos/Video.mp4';
 
 const Hero = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id='hero'>
             <Video as='video' autoPlay='autoplay' loop='loop' muted>
                 <source src={BackgroundVideo} type='video/mp4'></source>
             </Video>

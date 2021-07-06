@@ -16,7 +16,7 @@ export const AboutContainer = styled.div`
 export const InfoContainer = styled.div`
     display: grid;
     z-index: 1;
-    width: 100%
+    width: 80%;
     max-width: 1100px;
     height: 53rem;
     margin-right: auto;
@@ -107,15 +107,10 @@ export const Button = styled(Link)`
 `
 
 export const ImgContainer = styled.div`
-    max-width: 555px;
+    max-width: 570px;
     margin-left: 3rem;
     margin-right: 3rem;
     height: 100%
-    @media screen and (max-width: 768px) {
-        justify-content: center;
-        margin: auto;
-    }
-
 `
 export const Img = styled.img`
     width: 100%;

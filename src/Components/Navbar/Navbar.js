@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavList>
                 <NavListItem>
-                    <NavLink to='home'>Home</NavLink>
+                    <NavLink to='services'>Services</NavLink>
                 </NavListItem>
                 <NavListItem>
                     <NavLink to='about'>About</NavLink>

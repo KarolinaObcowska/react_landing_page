@@ -4,7 +4,7 @@ import BackgroundVideo from '../../videos/Video.mp4';
 
 const Hero = () => {
     return (
-        <HeroContainer id='hero'>
+        <HeroContainer id='home'>
             <Video as='video' autoPlay='autoplay' loop='loop' muted>
                 <source src={BackgroundVideo} type='video/mp4'></source>
             </Video>

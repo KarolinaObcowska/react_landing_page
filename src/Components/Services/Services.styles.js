@@ -32,10 +32,10 @@ export const ServicesWrap = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 1rem;
-    padding: 0 3rem;
+    padding: auto;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -55,7 +55,7 @@ export const ServicesCard = styled.div`
     align-items: center;
     border-radius: 1rem;
     max-height: 350px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all .2s ease-in-out;
 

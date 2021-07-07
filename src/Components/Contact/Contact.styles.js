@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Background from '../../images/background.svg';
 const primary_color = '#F21170';
 const secondary_color = '#1f3049';
 
@@ -17,11 +18,9 @@ export const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
     color: ${primary_color};
-    border-radius: 50px;
-    padding: 4rem;
+    padding: 3rem;
     width: 100%;
     max-width: 600px;
- 
 `
 
 export const FormTitle = styled.h2`
@@ -50,7 +49,8 @@ export const FormLabel = styled.label`
 `
 
 export const FormInput = styled.input`
-    height: 2rem
+    height: 2rem;
+    border: 1px solid ${secondary_color};
     @media screen and (max-width: 68px) {
         width: 13rem
     }
@@ -58,6 +58,7 @@ export const FormInput = styled.input`
 
 export const FormTextarea = styled.textarea`
     margin-bottom: 2rem;   
+    border: 1px solid ${secondary_color};
     height: 4rem
 `
 

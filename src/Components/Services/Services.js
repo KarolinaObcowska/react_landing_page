@@ -2,7 +2,7 @@ import React from 'react'
 import Icon1 from '../../images/svg-3.svg';
 import Icon2 from '../../images/svg-5.svg';
 import Icon3 from '../../images/svg-4.svg';
-
+import Icon4 from '../../images/svg-6.svg';
 
 import {
     ServicesContainer,
@@ -33,6 +33,11 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
                     <ServicesSubtitle>Adipiscing elit</ServicesSubtitle>
+                    <ServicesP>Lorem ipsum dolor sit amet.</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon4} />
+                    <ServicesSubtitle>Dolore magna</ServicesSubtitle>
                     <ServicesP>Lorem ipsum dolor sit amet.</ServicesP>
                 </ServicesCard>
             </ServicesWrap>

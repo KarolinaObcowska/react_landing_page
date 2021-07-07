@@ -17,21 +17,21 @@ const Footer = () => {
         <FooterContainer>
             <FooterWrap>
                 <FooterLinksWraper>
-                    <FooterItem to='facebook.com'>
+                    <FooterItem as='a' href='facebook.com'>
                         <AiFillFacebook />
                     </FooterItem>
-                    <FooterItem to='instagram.com'>
+                    <FooterItem as='a' href='instagram.com'>
                         <AiFillInstagram />
                     </FooterItem>
-                    <FooterItem to='twitter.com'>
+                    <FooterItem as='a' href='twitter.com'>
                         <AiFillTwitterSquare />
                     </FooterItem>
-                    <FooterItem to='linkedin.com'>
+                    <FooterItem as='a' href='linkedin.com'>
                         <AiFillLinkedin />
                     </FooterItem>
                 </FooterLinksWraper>
             </FooterWrap>
-            <FooterCopyright>Copyright © 2021 Karolina Obcowska. </FooterCopyright>
+            <FooterCopyright type='submit'>Copyright © 2021 Karolina Obcowska. </FooterCopyright>
         </FooterContainer>
     )
 }

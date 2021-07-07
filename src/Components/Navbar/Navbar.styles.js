@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { Link as LinkRouter } from 'react-router-dom';
 
 const primaryColor = '#F21170';
 const slideIn = keyframes`
@@ -91,7 +90,7 @@ export const NavListItem = styled.li`
     }
 `;
 
-export const NavLink = styled(LinkRouter)`
+export const NavLink = styled.a`
     padding: 1rem 0;
     margin: 0 2rem;
     position: relative;

@@ -12,7 +12,7 @@ import {
 
 const Contact = () => {
     return (
-        <ContactContainer>
+        <ContactContainer id='contact'>
             <FormTitle>Contact Us!</FormTitle>
             <ContactForm>
                 <FormLabel>Name</FormLabel>

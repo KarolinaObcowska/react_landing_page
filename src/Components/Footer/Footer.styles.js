@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
 const primary_color = '#F21170';
 const secondary_color = '#1f3049';
 
 export const FooterContainer = styled.footer`
     background-color: white;
     height: 6rem;
+    border-top: 1px solid ${primary_color};
 `
 export const FooterWrap = styled.div`
     display: flex;
@@ -21,7 +21,7 @@ export const FooterLinksWraper = styled.ul`
     flex-direction: row;
     justify-content: center;
 `
-export const FooterItem = styled(Link)`
+export const FooterItem = styled.a`
     display: flex;
     font-size: 2rem;
     justify-content: space-around;

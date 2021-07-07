@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { db } from '../firebase';
 import { 
     ContactContainer, 
     ContactForm, 
@@ -11,17 +12,43 @@ import {
 
 
 const Contact = () => {
+
+    const initialState = '';
+
+    const [name, setName] = useState(initialState);
+    const [email, setEmail] = useState(initialState);
+    const [message, setMessage] = useState(initialState);
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        db.collection('contacts')
+        .add({
+            name: name,
+            email: email,
+            message: message
+        })
+        .then(() => {
+            alert('Message has been submited')
+        })
+        .catch(err => {
+            alert(err.message)
+        })
+        setName(initialState);
+        setEmail(initialState);
+        setMessage(initialState);
+    }
+
     return (
         <ContactContainer id='contact'>
             <FormTitle>Contact Us!</FormTitle>
-            <ContactForm>
+            <ContactForm onSubmit={handleSubmit} >
                 <FormLabel>Name</FormLabel>
-                <FormInput />
+                <FormInput name='name' onChange={e => setName(e.target.value)}/>
                 <FormLabel>E-mail</FormLabel>
-                <FormInput />
+                <FormInput name='email' onChange={e => setEmail(e.target.value)}/>
                 <FormLabel>Message</FormLabel>
-                <FormTextarea />
-                <FormButton>Submit</FormButton>
+                <FormTextarea name='message' onChange={e => setMessage(e.target.value)}/>
+                <FormButton type='submit'>Submit</FormButton>
             </ContactForm>
         </ContactContainer>
     )

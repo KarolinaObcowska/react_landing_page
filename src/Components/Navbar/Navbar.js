@@ -4,22 +4,42 @@ import { RiBarChartHorizontalFill } from 'react-icons/ri';
 const Navbar = ({ toggle }) => {
     return (
         <Nav>
-            <Title>The Universe</Title>
+            <Title to='home'
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}>The Universe</Title>
             <MobileIcon onClick={toggle}>
                 <RiBarChartHorizontalFill />
             </MobileIcon>
             <NavList>
                 <NavListItem>
-                    <NavLink as='a' href='#services'>Services</NavLink>
+                    <NavLink to='services'
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>Services</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink as='a' href='#about'>About</NavLink>
+                    <NavLink to='about'
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>About</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink as='a' href='#team'>Team</NavLink>
+                    <NavLink to='team'
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>Team</NavLink>
                 </NavListItem>
                 <NavListItem>
-                    <NavLink as='a' href='#contact'>Contact</NavLink>
+                    <NavLink to='contact'
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}>Contact</NavLink>
                 </NavListItem>
             </NavList>
         </Nav>

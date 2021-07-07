@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import Background from '../../images/background.svg';
 const primary_color = '#F21170';
 const secondary_color = '#1f3049';
 
 export const ContactContainer = styled.section`
-    height: calc(100vh - 6rem);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +67,7 @@ export const FormButton = styled.button`
     width: 7rem;
     margin: auto;
     color: white;
-    padding: .3rem;
+    padding: .6rem;
     border-radius: 50px;
     background-color: ${primary_color};
     background: linear-gradient(90deg, rgba(227,29,121,1) 13%, rgba(255,0,236,1) 100%);

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import {Link} from 'react-scroll';
 
 const primaryColor = '#F21170';
 const slideIn = keyframes`
@@ -22,10 +23,11 @@ export const Nav = styled.nav`
     z-index: 1;
 `;
 
-export const Title = styled.h2`
+export const Title = styled(Link)`
     margin-left: 2rem;
     transform: translateX(-70rem);
     color: white;
+    font-size: 1.5rem;
     animation: ${slideIn} .5s forwards;
     
     ::before {
@@ -90,7 +92,7 @@ export const NavListItem = styled.li`
     }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
     padding: 1rem 0;
     margin: 0 2rem;
     position: relative;

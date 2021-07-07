@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
-import { Link as LinkRouter } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const primary_color = '#1f3049';
 const hover_color = '#F21170'
@@ -50,7 +50,7 @@ export const SidebarListItems = styled.ul`
     }
 `
 
-export const SidebarLink = styled(LinkRouter)`
+export const SidebarLink = styled(Link)`
     display: flex;
     alignt-items:center;
     justify-content: center;

@@ -17,10 +17,14 @@ export const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
+    transition: .3s ease-in-out;
     text-transform: uppercase;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
+    @media screen and(max-width: 768px) {
+        background-color: transparent!importnat;
+    }
 `;
 
 export const Title = styled(Link)`
@@ -64,7 +68,12 @@ export const MobileIcon = styled.div`
 export const NavList = styled.ul`
     display: flex;
     padding-right: 2rem;
-    padding-left: 5rem
+    padding-left: 5rem;
+
+    @media screen and (max-width: 900px) { 
+        margin: auto;
+        padding-bottom: 1rem;
+    }
 `;
 
 export const NavListItem = styled.li`

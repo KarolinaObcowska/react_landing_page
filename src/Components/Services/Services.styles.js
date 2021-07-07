@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Wave from '../../images/wave.svg';
 const primary_color = '#1f3049';
 const secondary_color = '#F21170'
 

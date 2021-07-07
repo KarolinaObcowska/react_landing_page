@@ -5,6 +5,8 @@ import Hero from './Components/Hero/Hero';
 import Navigation from './Components/Navigation/Navigation';
 import Info from './Components/Info/Info';
 import Services from './Components/Services/Services';
+import Contact from './Components/Contact/Contact';
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Info {...aboutObj} />
         <Services />
         <Info {...teamObj} />
+        <Contact />
+        <Footer />
       </Router>
     </div>
   );

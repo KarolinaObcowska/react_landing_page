@@ -5,7 +5,7 @@ const primary_color = '#F21170'
 const secondary_color = '#1f3049'
 
 export const AboutContainer = styled.div`
-    height: 100vh;
+    height: fit-content;
     background: ${({ lightBg }) => (lightBg ? 'white' : `${secondary_color}`)};
     color: ${({ lightBg }) => (lightBg ? `${secondary_color}` : 'white')};
     @media screen and (max-width: 768px) {

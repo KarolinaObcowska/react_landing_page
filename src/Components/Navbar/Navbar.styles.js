@@ -10,7 +10,7 @@ to{
 }`;
 
 export const Nav = styled.nav`
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     height: 4rem;
     width: 100%;
     display: flex;
@@ -41,13 +41,13 @@ export const Title = styled.h2`
         animation: ${slideIn} 1.2s forwards;
     }
     
-    @media screen and (max-width: 768px) { 
+    @media screen and (max-width: 900px) { 
         display: none
     }
 `;
 export const MobileIcon = styled.div`
     display: none;
-    color: white;
+    color: ${primaryColor};
     
     @media screen and (max-width: 768px) {
         display: block;
@@ -62,7 +62,8 @@ export const MobileIcon = styled.div`
 `
 export const NavList = styled.ul`
     display: flex;
-    margin-right: 2rem;
+    padding-right: 2rem;
+    padding-left: 5rem
 `;
 
 export const NavListItem = styled.li`

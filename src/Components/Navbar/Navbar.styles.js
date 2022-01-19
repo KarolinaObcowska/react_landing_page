@@ -10,7 +10,8 @@ to{
 }`;
 
 export const Nav = styled.nav`
-    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     height: 4rem;
     width: 100%;
     display: flex;

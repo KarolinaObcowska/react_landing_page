@@ -1,6 +1,5 @@
-Simple landing page created with react and styled components. The form on the website is operated by firebase.
-
-To run project you can download code and in the project directory, you can run:
+# React landing page
+This is simple landing page created wsing React and Styled Components, form on the website is handled by Firebase. 
 
 ### `npm start`
 

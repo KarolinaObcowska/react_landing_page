@@ -10,7 +10,7 @@ to{
 }`;
 
 export const Nav = styled.nav`
-    padding-top: 1.5rem;
+    padding: 1.5rem;
     height: 4rem;
     width: 100%;
     display: flex;
@@ -45,7 +45,6 @@ export const Title = styled(Link)`
         transform: translateX(-70rem);
         animation: ${slideIn} 1.2s forwards;
     }
-    
     @media screen and (max-width: 900px) { 
         display: none
     }

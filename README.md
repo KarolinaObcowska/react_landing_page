@@ -25,5 +25,5 @@ This is simple landing page created wsing React and Styled Components, form on t
 
 ## Links
 
-- ### [Solution URL:](https://github.com/KarolinaObcowska/react_landing_page)
-- ### [Live Site URL:](https://vibrant-golick-986d09.netlify.app)
+- ### Solution URL: [Click](https://github.com/KarolinaObcowska/react_landing_page)
+- ### Live Site URL: [Click](https://vibrant-golick-986d09.netlify.app)

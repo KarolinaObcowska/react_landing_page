@@ -8,7 +8,7 @@ This is simple landing page created wsing React and Styled Components, form on t
 
 ## Scripts
 
-### To run this project, in the project directory, you can run `npm start`
+ To run this project, in the project directory, you can run `npm start`
 
 ## Tools
 
